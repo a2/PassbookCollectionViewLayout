@@ -183,7 +183,7 @@ public class PassbookCollectionViewLayout: UICollectionViewLayout {
         let dy = (collectionViewBounds.size.height - cellFrameSize.height - bottomStackHeight) / 2.0
         let frame = CGRect(origin: CGPoint(x: cellFrameX, y: collectionViewBounds.size.height + dy), size: cellFrameSize)
 
-        let bottomStackOffset = selectedIndexPath.item - (firstVisibleIndexPath?.item ?? 0) - 1
+        let bottomStackOffset = selectedIndexPath.item - (firstVisibleIndexPath?.item ?? 0)
         let destinationScale = bottomStackMinimumScale + (bottomStackMaximumScale - bottomStackMinimumScale) * (CGFloat(bottomStackOffset) / CGFloat(bottomStackCount + 1))
         let destinationY = collectionViewBounds.maxY - bottomStackHeight + bottomStackCellHeight * CGFloat(bottomStackOffset)
 
