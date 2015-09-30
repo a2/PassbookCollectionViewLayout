@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZPF-hc-GyC">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="TaG-j9-fbE">
+            <objects>
+                <viewController id="ZPF-hc-GyC" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gQK-Lh-dnB"/>
+                        <viewControllerLayoutGuide type="bottom" id="f0e-Ec-jFt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IGd-vR-pjo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7C-IU-d01">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="PassbookCollectionViewLayout" id="kRz-Ns-4dx"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="ZPF-hc-GyC" id="prg-8i-Rd9"/>
+                                </connections>
+                            </navigationBar>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JKl-Pt-oOX">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="TTl-3R-7PG" customClass="PassbookCollectionViewLayout" customModule="PassbookCollectionViewLayout"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="F4m-zw-ZVx" customClass="Cell" customModule="Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="sbW-kK-LL7">
+                                                    <rect key="frame" x="-5" y="-5" width="210" height="210"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw1-aM-bhO">
+                                                    <rect key="frame" x="68" y="0.0" width="64" height="64"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="64" id="BP0-5t-ZO6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="sbW-kK-LL7" firstAttribute="top" secondItem="F4m-zw-ZVx" secondAttribute="top" constant="-5" id="0c4-Gs-Zoa"/>
+                                            <constraint firstAttribute="bottom" secondItem="sbW-kK-LL7" secondAttribute="bottom" constant="-5" id="1YD-Pd-g41"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bw1-aM-bhO" secondAttribute="trailing" constant="20" id="PPm-PC-1zu"/>
+                                            <constraint firstItem="Bw1-aM-bhO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="F4m-zw-ZVx" secondAttribute="leading" constant="20" id="aGW-38-tRC"/>
+                                            <constraint firstItem="Bw1-aM-bhO" firstAttribute="centerX" secondItem="F4m-zw-ZVx" secondAttribute="centerX" id="iIL-fZ-ZYF"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Bw1-aM-bhO" secondAttribute="bottom" constant="20" id="jY7-9D-32T"/>
+                                            <constraint firstItem="sbW-kK-LL7" firstAttribute="leading" secondItem="F4m-zw-ZVx" secondAttribute="leading" constant="-5" id="ns8-eI-5fK"/>
+                                            <constraint firstItem="Bw1-aM-bhO" firstAttribute="top" secondItem="F4m-zw-ZVx" secondAttribute="top" id="qje-A2-Lfx"/>
+                                            <constraint firstAttribute="trailing" secondItem="sbW-kK-LL7" secondAttribute="trailing" constant="-5" id="wbR-C8-gau"/>
+                                        </constraints>
+                                        <size key="customSize" width="200" height="200"/>
+                                        <connections>
+                                            <outlet property="label" destination="Bw1-aM-bhO" id="9db-rS-fG3"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZPF-hc-GyC" id="d8D-yA-Qxc"/>
+                                    <outlet property="delegate" destination="ZPF-hc-GyC" id="WfD-ic-3Nj"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f7C-IU-d01" firstAttribute="leading" secondItem="IGd-vR-pjo" secondAttribute="leading" id="53H-lr-ZAE"/>
+                            <constraint firstItem="f0e-Ec-jFt" firstAttribute="top" secondItem="JKl-Pt-oOX" secondAttribute="bottom" id="SZe-cU-sef"/>
+                            <constraint firstItem="JKl-Pt-oOX" firstAttribute="leading" secondItem="IGd-vR-pjo" secondAttribute="leading" id="XKu-uO-GHF"/>
+                            <constraint firstAttribute="trailing" secondItem="JKl-Pt-oOX" secondAttribute="trailing" id="ZyQ-zc-eKm"/>
+                            <constraint firstAttribute="trailing" secondItem="f7C-IU-d01" secondAttribute="trailing" id="gNS-Ft-UjA"/>
+                            <constraint firstItem="JKl-Pt-oOX" firstAttribute="top" secondItem="gQK-Lh-dnB" secondAttribute="bottom" id="jqM-vL-EOR"/>
+                            <constraint firstItem="f7C-IU-d01" firstAttribute="top" secondItem="gQK-Lh-dnB" secondAttribute="bottom" id="kxk-fY-8eG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="JKl-Pt-oOX" id="Opd-ck-T8t"/>
+                        <outlet property="navigationBar" destination="f7C-IU-d01" id="Eod-v5-cBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UmU-8I-prJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Shadow" width="31" height="31"/>
+    </resources>
+</document>

@@ -11,6 +11,14 @@
 		83F54A3E1BBC0BA8009B57AB /* PassbookCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F54A331BBC0BA8009B57AB /* PassbookCollectionViewLayout.framework */; settings = {ASSET_TAGS = (); }; };
 		83F54A431BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F54A421BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.swift */; };
 		83F54A501BBC0D33009B57AB /* PassbookCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F54A4F1BBC0D33009B57AB /* PassbookCollectionViewLayout.swift */; settings = {ASSET_TAGS = (); }; };
+		83F54A581BBC0DD8009B57AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F54A571BBC0DD8009B57AB /* AppDelegate.swift */; };
+		83F54A5A1BBC0DD8009B57AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F54A591BBC0DD8009B57AB /* ViewController.swift */; };
+		83F54A5D1BBC0DD8009B57AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F54A5B1BBC0DD8009B57AB /* Main.storyboard */; };
+		83F54A5F1BBC0DD8009B57AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F54A5E1BBC0DD8009B57AB /* Assets.xcassets */; };
+		83F54A621BBC0DD8009B57AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F54A601BBC0DD8009B57AB /* LaunchScreen.storyboard */; };
+		83F54A831BBC0DEB009B57AB /* PassbookCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F54A331BBC0BA8009B57AB /* PassbookCollectionViewLayout.framework */; };
+		83F54A841BBC0DEB009B57AB /* PassbookCollectionViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83F54A331BBC0BA8009B57AB /* PassbookCollectionViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83F54A891BBC0EAD009B57AB /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F54A881BBC0EAD009B57AB /* Cell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +29,28 @@
 			remoteGlobalIDString = 83F54A321BBC0BA8009B57AB;
 			remoteInfo = PassbookCollectionViewLayout;
 		};
+		83F54A851BBC0DEB009B57AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83F54A2A1BBC0BA8009B57AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83F54A321BBC0BA8009B57AB;
+			remoteInfo = PassbookCollectionViewLayout;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83F54A871BBC0DEB009B57AB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83F54A841BBC0DEB009B57AB /* PassbookCollectionViewLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		83F54A331BBC0BA8009B57AB /* PassbookCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PassbookCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +60,14 @@
 		83F54A421BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassbookCollectionViewLayoutTests.swift; sourceTree = "<group>"; };
 		83F54A441BBC0BA8009B57AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F54A4F1BBC0D33009B57AB /* PassbookCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassbookCollectionViewLayout.swift; sourceTree = SOURCE_ROOT; };
+		83F54A551BBC0DD8009B57AB /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F54A571BBC0DD8009B57AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83F54A591BBC0DD8009B57AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83F54A5C1BBC0DD8009B57AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83F54A5E1BBC0DD8009B57AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83F54A611BBC0DD8009B57AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83F54A631BBC0DD8009B57AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F54A881BBC0EAD009B57AB /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +86,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83F54A521BBC0DD8009B57AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F54A831BBC0DEB009B57AB /* PassbookCollectionViewLayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +102,7 @@
 			children = (
 				83F54A351BBC0BA8009B57AB /* PassbookCollectionViewLayout */,
 				83F54A411BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests */,
+				83F54A561BBC0DD8009B57AB /* Example */,
 				83F54A341BBC0BA8009B57AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +112,7 @@
 			children = (
 				83F54A331BBC0BA8009B57AB /* PassbookCollectionViewLayout.framework */,
 				83F54A3D1BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.xctest */,
+				83F54A551BBC0DD8009B57AB /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +134,20 @@
 				83F54A421BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.swift */,
 			);
 			path = PassbookCollectionViewLayoutTests;
+			sourceTree = "<group>";
+		};
+		83F54A561BBC0DD8009B57AB /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				83F54A571BBC0DD8009B57AB /* AppDelegate.swift */,
+				83F54A5E1BBC0DD8009B57AB /* Assets.xcassets */,
+				83F54A881BBC0EAD009B57AB /* Cell.swift */,
+				83F54A631BBC0DD8009B57AB /* Info.plist */,
+				83F54A601BBC0DD8009B57AB /* LaunchScreen.storyboard */,
+				83F54A5B1BBC0DD8009B57AB /* Main.storyboard */,
+				83F54A591BBC0DD8009B57AB /* ViewController.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +200,25 @@
 			productReference = 83F54A3D1BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		83F54A541BBC0DD8009B57AB /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F54A7A1BBC0DD8009B57AB /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				83F54A511BBC0DD8009B57AB /* Sources */,
+				83F54A521BBC0DD8009B57AB /* Frameworks */,
+				83F54A531BBC0DD8009B57AB /* Resources */,
+				83F54A871BBC0DEB009B57AB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83F54A861BBC0DEB009B57AB /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 83F54A551BBC0DD8009B57AB /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +235,9 @@
 					83F54A3C1BBC0BA8009B57AB = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
+					83F54A541BBC0DD8009B57AB = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 83F54A2D1BBC0BA8009B57AB /* Build configuration list for PBXProject "PassbookCollectionViewLayout" */;
@@ -163,6 +246,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 83F54A291BBC0BA8009B57AB;
 			productRefGroup = 83F54A341BBC0BA8009B57AB /* Products */;
@@ -171,6 +255,7 @@
 			targets = (
 				83F54A321BBC0BA8009B57AB /* PassbookCollectionViewLayout */,
 				83F54A3C1BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests */,
+				83F54A541BBC0DD8009B57AB /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +272,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F54A531BBC0DD8009B57AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F54A621BBC0DD8009B57AB /* LaunchScreen.storyboard in Resources */,
+				83F54A5F1BBC0DD8009B57AB /* Assets.xcassets in Resources */,
+				83F54A5D1BBC0DD8009B57AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +304,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83F54A511BBC0DD8009B57AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F54A5A1BBC0DD8009B57AB /* ViewController.swift in Sources */,
+				83F54A581BBC0DD8009B57AB /* AppDelegate.swift in Sources */,
+				83F54A891BBC0EAD009B57AB /* Cell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,7 +322,31 @@
 			target = 83F54A321BBC0BA8009B57AB /* PassbookCollectionViewLayout */;
 			targetProxy = 83F54A3F1BBC0BA8009B57AB /* PBXContainerItemProxy */;
 		};
+		83F54A861BBC0DEB009B57AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83F54A321BBC0BA8009B57AB /* PassbookCollectionViewLayout */;
+			targetProxy = 83F54A851BBC0DEB009B57AB /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83F54A5B1BBC0DD8009B57AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83F54A5C1BBC0DD8009B57AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83F54A601BBC0DD8009B57AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83F54A611BBC0DD8009B57AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		83F54A451BBC0BA8009B57AB /* Debug */ = {
@@ -364,6 +493,30 @@
 			};
 			name = Release;
 		};
+		83F54A7B1BBC0DD8009B57AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		83F54A7C1BBC0DD8009B57AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -393,6 +546,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		83F54A7A1BBC0DD8009B57AB /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F54A7B1BBC0DD8009B57AB /* Debug */,
+				83F54A7C1BBC0DD8009B57AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
