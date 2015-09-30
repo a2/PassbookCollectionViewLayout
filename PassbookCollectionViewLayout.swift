@@ -184,7 +184,7 @@ public class PassbookCollectionViewLayout: UICollectionViewLayout {
         let frame = CGRect(origin: CGPoint(x: cellFrameX, y: collectionViewBounds.size.height + dy), size: cellFrameSize)
 
         let bottomStackOffset = selectedIndexPath.item - (firstVisibleIndexPath?.item ?? 0) - 1
-        let destinationScale = bottomStackMinimumScale + (bottomStackMaximumScale - bottomStackMinimumScale) * (CGFloat(bottomStackOffset) / CGFloat(bottomStackCount))
+        let destinationScale = bottomStackMinimumScale + (bottomStackMaximumScale - bottomStackMinimumScale) * (CGFloat(bottomStackOffset) / CGFloat(bottomStackCount + 1))
         let destinationY = collectionViewBounds.maxY - bottomStackHeight + bottomStackCellHeight * CGFloat(bottomStackOffset)
 
         let scale: CGFloat = {
@@ -210,7 +210,7 @@ public class PassbookCollectionViewLayout: UICollectionViewLayout {
     private func passAttributes(indexPath indexPath: NSIndexPath, selectedIndexPath: NSIndexPath) -> (frame: CGRect, transform: CGAffineTransform) {
         let bottomStackOffset = indexPath.item - (firstVisibleIndexPath?.item ?? 0) + (indexPath.item > selectedIndexPath.item ? 0 : 1)
         let scale: CGFloat = {
-            let value = bottomStackMinimumScale + (bottomStackMaximumScale - bottomStackMinimumScale) * (CGFloat(bottomStackOffset) / CGFloat(bottomStackCount))
+            let value = bottomStackMinimumScale + (bottomStackMaximumScale - bottomStackMinimumScale) * (CGFloat(bottomStackOffset) / CGFloat(bottomStackCount + 1))
             return min(value, 1)
         }()
         let transform = CGAffineTransformMakeScale(scale, scale)
