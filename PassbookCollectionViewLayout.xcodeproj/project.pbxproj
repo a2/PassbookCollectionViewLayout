@@ -10,6 +10,7 @@
 		83F54A371BBC0BA8009B57AB /* PassbookCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F54A361BBC0BA8009B57AB /* PassbookCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83F54A3E1BBC0BA8009B57AB /* PassbookCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F54A331BBC0BA8009B57AB /* PassbookCollectionViewLayout.framework */; settings = {ASSET_TAGS = (); }; };
 		83F54A431BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F54A421BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.swift */; };
+		83F54A501BBC0D33009B57AB /* PassbookCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F54A4F1BBC0D33009B57AB /* PassbookCollectionViewLayout.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		83F54A3D1BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PassbookCollectionViewLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F54A421BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassbookCollectionViewLayoutTests.swift; sourceTree = "<group>"; };
 		83F54A441BBC0BA8009B57AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F54A4F1BBC0D33009B57AB /* PassbookCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassbookCollectionViewLayout.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,9 @@
 		83F54A351BBC0BA8009B57AB /* PassbookCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				83F54A361BBC0BA8009B57AB /* PassbookCollectionViewLayout.h */,
 				83F54A381BBC0BA8009B57AB /* Info.plist */,
+				83F54A361BBC0BA8009B57AB /* PassbookCollectionViewLayout.h */,
+				83F54A4F1BBC0D33009B57AB /* PassbookCollectionViewLayout.swift */,
 			);
 			path = PassbookCollectionViewLayout;
 			sourceTree = "<group>";
@@ -80,8 +83,8 @@
 		83F54A411BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests */ = {
 			isa = PBXGroup;
 			children = (
-				83F54A421BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.swift */,
 				83F54A441BBC0BA8009B57AB /* Info.plist */,
+				83F54A421BBC0BA8009B57AB /* PassbookCollectionViewLayoutTests.swift */,
 			);
 			path = PassbookCollectionViewLayoutTests;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 		83F54A2A1BBC0BA8009B57AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Pandamonia LLC";
 				TargetAttributes = {
@@ -193,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F54A501BBC0D33009B57AB /* PassbookCollectionViewLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +312,7 @@
 		83F54A481BBC0BA8009B57AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = us.pandamonia.PassbookCollectionViewLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		83F54A491BBC0BA8009B57AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -375,6 +383,7 @@
 				83F54A491BBC0BA8009B57AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F54A4A1BBC0BA8009B57AB /* Build configuration list for PBXNativeTarget "PassbookCollectionViewLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +392,7 @@
 				83F54A4C1BBC0BA8009B57AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

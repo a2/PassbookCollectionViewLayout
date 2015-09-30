@@ -13,7 +13,3 @@ FOUNDATION_EXPORT double PassbookCollectionViewLayoutVersionNumber;
 
 //! Project version string for PassbookCollectionViewLayout.
 FOUNDATION_EXPORT const unsigned char PassbookCollectionViewLayoutVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <PassbookCollectionViewLayout/PublicHeader.h>
-
-
