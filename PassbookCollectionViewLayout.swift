@@ -79,7 +79,7 @@ public class PassbookCollectionViewLayout: UICollectionViewLayout {
         collectionViewBounds = collectionView.bounds
         cellFrameSize = CGSize(width: cellSize.width > 0 ? cellSize.width : collectionViewBounds.size.width, height: cellSize.height)
         numberOfItems = collectionView.numberOfItemsInSection(0)
-        visibleHeight = min(max(collectionViewBounds.size.height / CGFloat(numberOfItems), minimumVisibleHeight), cellSize.height)
+        visibleHeight = min(max(collectionViewBounds.size.height / CGFloat(numberOfItems), minimumVisibleHeight), cellSize.height - 20)
         cellFrameX = (collectionViewBounds.size.width - cellFrameSize.width) / 2.0
         relativeOriginY = collectionViewBounds.origin.y + collectionView.contentInset.top
     }
